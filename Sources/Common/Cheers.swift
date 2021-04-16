@@ -53,11 +53,11 @@ open class CheerView: UIView {
 
     let cells: [CAEmitterCell] = combinations.reduce([]) { (accum, combination) in
       let cell = CAEmitterCell()
-      cell.birthRate = 20
+      cell.birthRate = config.birthRate
       cell.beginTime = beginTime
       cell.lifetime = 20.0
       cell.lifetimeRange = 10
-      cell.velocity = 250 * yMultiplier
+      cell.velocity = config.baseVelocity * yMultiplier
       cell.velocityRange = 50
       cell.emissionLongitude = CGFloat.pi
       cell.emissionRange = CGFloat.pi * 0.2

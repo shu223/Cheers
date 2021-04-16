@@ -31,6 +31,12 @@ public struct Config {
   /// Specify the particle shapes
     public var particle: Particle = .confetti(allowedShapes: Particle.ConfettiShape.all)
 
+  /// The initial mean velocity of each emitted object.
+  public var baseVelocity: CGFloat = 250
+  
+  /// The number of emitted objects created every second.
+  public var birthRate: Float = 20
+    
   /// The list of available colors. This will be shuffled
   public var colors: [UIColor] = [
     UIColor.red,
