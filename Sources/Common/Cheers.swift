@@ -67,11 +67,12 @@ open class CheerView: UIView {
       cell.color = combination.0.cgColor
       cell.alphaSpeed = -0.1
       cell.contents = combination.1.cgImage
-      cell.xAcceleration = 20
-      cell.yAcceleration = 50 * yMultiplier
       cell.redRange = config.colorRange
       cell.greenRange = config.colorRange
       cell.blueRange = config.colorRange
+
+      cell.emissionLongitude = CGFloat(Double.pi)
+      cell.emissionRange = CGFloat(Double.pi)
 
       return accum + [cell]
     }
