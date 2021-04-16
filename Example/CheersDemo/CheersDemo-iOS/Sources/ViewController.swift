@@ -9,7 +9,10 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     view.backgroundColor = UIColor.white
 
-    cheerView.config.particle = .confetti(allowedShapes: Particle.ConfettiShape.all)
+//    cheerView.config.particle = .confetti(allowedShapes: Particle.ConfettiShape.all)
+    cheerView.config.particle = .confetti(allowedShapes: [.rectangle, .curvedQuadrilateral])
+    cheerView.config.baseVelocity = 100
+    cheerView.config.birthRate = 6
     view.addSubview(cheerView)
   }
 
