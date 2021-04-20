@@ -65,7 +65,7 @@ open class CheerView: UIView {
       cell.scale = 0.3
       cell.scaleRange = 0.2
       cell.color = combination.0.cgColor
-      cell.alphaSpeed = -0.1
+      cell.alphaSpeed = config.alphaSpeed
       cell.contents = combination.1.cgImage
       cell.redRange = config.colorRange
       cell.greenRange = config.colorRange

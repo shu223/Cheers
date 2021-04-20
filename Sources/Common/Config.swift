@@ -36,7 +36,10 @@ public struct Config {
   
   /// The number of emitted objects created every second.
   public var birthRate: Float = 20
-    
+
+  /// The speed, in seconds, at which the alpha component changes over the lifetime of the cell.
+  public var alphaSpeed: Float = -0.1
+
   /// The list of available colors. This will be shuffled
   public var colors: [UIColor] = [
     UIColor.red,

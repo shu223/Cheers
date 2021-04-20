@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     cheerView.config.particle = .confetti(allowedShapes: [.rectangle, .curvedQuadrilateral])
     cheerView.config.baseVelocity = 100
     cheerView.config.birthRate = 6
+    cheerView.config.alphaSpeed = -0.05
     view.addSubview(cheerView)
   }
 
